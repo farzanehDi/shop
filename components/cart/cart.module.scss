@@ -1,0 +1,36 @@
+.arrowBox {
+	position:relative;
+    border: 1px solid#e6e6e6;
+    width: 310px;
+}
+.arrowBox:after, .arrowBox:before {
+	bottom: 100%;
+	right: 25px;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrowBox:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: #ffffff;
+	border-width: 10px;
+	margin-right: 25px;
+}
+.arrowBox:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-bottom-color: #e6e6e6;
+	border-width: 11px;
+	margin-right: 24px;
+}
+
+.imgCard{
+	width:80px;
+}
+.del{
+	width:25px;
+	height:25px;
+}

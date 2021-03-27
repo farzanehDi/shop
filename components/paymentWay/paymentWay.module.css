@@ -1,0 +1,9 @@
+.slider button:before{
+    color: #373737;
+    font-size: 30px;
+}
+
+.slider button{
+    width:25px;
+    height:25px;
+}

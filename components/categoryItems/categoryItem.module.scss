@@ -1,0 +1,19 @@
+.logo{
+    width:50px;
+    top:3px;
+    right:5px;
+}
+.productImg{
+    width:auto;
+    height:150px;
+}
+.cart{
+    margin-left:-6px;
+    &:hover{
+        margin-left:3px;
+    }
+    &:hover div{
+       opacity: 1;
+      
+    }
+}

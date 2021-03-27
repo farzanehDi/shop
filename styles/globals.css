@@ -1,0 +1,210 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: IRANSans;
+        font-style: normal;
+        font-weight: 900;
+        src: url("/fonts/eot/IRANSansWeb(FaNum)_Black.eot");
+        src: url("/fonts/eot/IRANSansWeb(FaNum)_Black.eot?#iefix") format("embedded-opentype"),
+            /* IE6-8 */ url("/fonts/woff2/IRANSansWeb(FaNum)_Black.woff2") format("woff2"),
+            /* FF39+,Chrome36+, Opera24+*/ url("/fonts/woff/IRANSansWeb(FaNum)_Black.woff") format("woff"),
+            /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("/fonts/ttf/IRANSansWeb(FaNum)_Black.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: IRANSans;
+        font-style: normal;
+        font-weight: bold;
+        src: url("/fonts/eot/IRANSansWeb(FaNum)_Bold.eot");
+        src: url("/fonts/eot/IRANSansWeb(FaNum)_Bold.eot?#iefix") format("embedded-opentype"),
+            /* IE6-8 */ url("/fonts/woff2/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"),
+            /* FF39+,Chrome36+, Opera24+*/ url("/fonts/woff/IRANSansWeb(FaNum)_Bold.woff") format("woff"),
+            /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("/fonts/ttf/IRANSansWeb(FaNum)_Bold.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: IRANSans;
+        font-style: normal;
+        font-weight: 500;
+        src: url("/fonts/eot/IRANSansWeb(FaNum)_Medium.eot");
+        src: url("/fonts/eot/IRANSansWeb(FaNum)_Medium.eot?#iefix") format("embedded-opentype"),
+            /* IE6-8 */ url("/fonts/woff2/IRANSansWeb(FaNum)_Medium.woff2") format("woff2"),
+            /* FF39+,Chrome36+, Opera24+*/ url("/fonts/woff/IRANSansWeb(FaNum)_Medium.woff") format("woff"),
+            /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("/fonts/ttf/IRANSansWeb(FaNum)_Medium.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: IRANSans;
+        font-style: normal;
+        font-weight: 300;
+        src: url("/fonts/eot/IRANSansWeb(FaNum)_Light.eot");
+        src: url("/fonts/eot/IRANSansWeb(FaNum)_Light.eot?#iefix") format("embedded-opentype"),
+            /* IE6-8 */ url("/fonts/woff2/IRANSansWeb(FaNum)_Light.woff2") format("woff2"),
+            /* FF39+,Chrome36+, Opera24+*/ url("/fonts/woff/IRANSansWeb(FaNum)_Light.woff") format("woff"),
+            /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("/fonts/ttf/IRANSansWeb(FaNum)_Light.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: IRANSans;
+        font-style: normal;
+        font-weight: 200;
+        src: url("/fonts/eot/IRANSansWeb(FaNum)_UltraLight.eot");
+        src: url("/fonts/eot/IRANSansWeb(FaNum)_UltraLight.eot?#iefix") format("embedded-opentype"),
+            /* IE6-8 */ url("/fonts/woff2/IRANSansWeb(FaNum)_UltraLight.woff2") format("woff2"),
+            /* FF39+,Chrome36+, Opera24+*/ url("/fonts/woff/IRANSansWeb(FaNum)_UltraLight.woff") format("woff"),
+            /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("/fonts/ttf/IRANSansWeb(FaNum)_UltraLight.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: IRANSans;
+        font-style: normal;
+        font-weight: normal;
+        src: url("/fonts/eot/IRANSansWeb(FaNum).eot");
+        src: url("/fonts/eot/IRANSansWeb(FaNum).eot?#iefix") format("embedded-opentype"),
+            /* IE6-8 */ url("/fonts/woff2/IRANSansWeb(FaNum).woff2") format("woff2"),
+            /* FF39+,Chrome36+, Opera24+*/ url("/fonts/woff/IRANSansWeb(FaNum).woff") format("woff"),
+            /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("/fonts/ttf/IRANSansWeb(FaNum).ttf") format("truetype");
+    }
+
+    html,
+    body {
+        @apply font-body text-gray-400 bg-gray-50;
+        direction: rtl;
+        height: 100%;
+        font-size: 13px;
+    }
+
+    * {
+        @apply transition-all duration-200 ease-in-out outline-none;
+    }
+
+    /***container component***/
+    #__next {
+        @apply h-full;
+    }
+
+    .site {
+        @apply min-h-full flex flex-col;
+    }
+
+    .siteContent {
+        flex: 1 0 auto;
+        @apply w-full;
+    }
+
+    .siteContent:after {
+        content: "\00a0";
+        @apply block h-0 invisible;
+    }
+    .Toastify__toast--dark {
+        background-color: #0000009c !important;
+    }
+    .fit-content {
+        width: fit-content;
+    }
+    .fit-content-h {
+        height: fit-content;
+    }
+
+    /***end container component***/
+}
+
+@layer components {
+    .btn-blue {
+        @apply bg-blue-200 text-white py-2 px-4 rounded;
+    }
+    .btn-orange {
+        @apply bg-orange-200 text-white py-2 px-4 rounded;
+    }
+
+    .btn-blue:hover {
+        @apply bg-blue-300;
+    }
+    .btn-orange:hover {
+        @apply bg-orange-300;
+    }
+
+    .btn-disable {
+        @apply opacity-50 cursor-not-allowed;
+    }
+
+    .btn-blue:focus,
+    .btn-orange:focus {
+        @apply outline-none;
+    }
+
+    .btn-waite {
+        @apply opacity-50 cursor-wait;
+    }
+
+    .input,select {
+        @apply border border-gray-200 rounded py-2 px-4;
+    }
+    select{
+        @apply border border-gray-200 rounded py-1 px-4;
+    }
+
+    .input:focus,select:focus {
+        @apply outline-none bg-white border-gray-300;
+    }
+
+    /****toast***/
+    .Toastify__toast-body {
+        @apply font-body;
+    }
+    /****toggle btn***/
+    .toggle-checkbox:checked {
+        @apply right-0 border-blue-300 left-auto;
+    }
+    .toggle-checkbox:checked + .toggle-label {
+        @apply bg-blue-300;
+    }
+    /***modal***/
+    .Modal {
+        @apply absolute pt-5 pb-5 flex items-center top-0 right-0 left-0 bottom-0 overflow-auto;
+    }
+    .content {
+        @apply bg-white rounded p-5 m-auto;
+        max-width: 1000px;
+    }
+
+    .ReactModal__Body--open {
+        @apply fixed w-full h-full overflow-hidden;
+    }
+
+    .Overlay {
+        @apply fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 z-10 w-screen h-screen;
+    }
+
+    .ReactModal__Overlay {
+        @apply opacity-0;
+    }
+
+    .ReactModal__Overlay--after-open {
+        @apply opacity-100;
+    }
+
+    .ReactModal__Overlay--before-close {
+        @apply opacity-0;
+    }
+    /***bread crumb***/
+    .breadcrumb{
+        @apply flex items-center;
+    }
+    .breadcrumb li{
+        @apply flex items-center;
+        max-height: 25px;
+    }
+    .breadcrumb li:not(:last-child):after{
+        @apply px-2 flex items-center;
+        font-size:20px;
+        content: '\203A';
+        max-height: 25px;
+    }
+    .breadcrumb li a{
+        @apply text-blue-200;
+    }
+
+    .breadcrumb li a:hover{
+        @apply text-blue-300;
+    }
+    /****/
+}
